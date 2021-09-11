@@ -764,9 +764,9 @@ function addToWallet() {
                 'type': 'ERC20',
                 'options': {
                     'address': '0xd5ba2f2b7f18ab17f389076fe956657538294f00',
-                    'symbol': 'APPL',
+                    'symbol': 'RERLIN',
                     'decimals': '18',
-                    'image': 'https://rerlin.com/images/logo.png',
+                    'image': 'https://rerlin.com/assets/images/logo.png',
                 },
             },
             id: Math.round(Math.random() * 100000)
