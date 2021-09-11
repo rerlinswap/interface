@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RERLIN Finance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/logo.png">
+
+</head>
+
+<body>
+    <header>
+        <nav id="menu" class="navbar navbar-expand-lg navbar-light fixed-top rubik py-3">
+            <div class="container">
+                <div class="logo">
+                    <a class="navbar-brand" href="/">
+                        <img src="./assets/images/rerlin.png" class="img-fluid logo__img" alt="">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-lg-grow-0" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#swap">Swap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bank">Bank service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#application">Application</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#airdrop">Claim Airdrop</a>
+                        </li>
+                    </ul>
+                    <div class="mx-3">
+                        <button href="#swap" class="btn btn-default navbar-button navbar-button__gray me-1 px-4">Presale</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="swap" class="py-5" style="margin-top: calc(70px + 1em);">
+        <div class="container">
+            <div class="banner-top">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="banner-top__left">
+                            <h1 class="rubik-light fw-normal">Rerlin Swap Protocol</h1>
+                            <h1 class="rubik-bold fw-bold">With automated finance.</h1>
+                            <p class="rubik fs-6 pt-2">Swap, earn, and build on the leading decentralized crypto trading protocol.</p>
+                            <a href="#airdrop" class="btn btn-dark banner-top__left--button px-3 rubik"><i
+                                    class="fa fa-long-arrow-right"></i> Get Airdrop</a><br>
+                                    <br>
+                            <p class="rubik fs-6 pt-2">
+                                
+                            </p>
+                            <p>(*) Rate Sale: 0.05 BNB = 3,750 Rerlin</p>
+                            <p>(*) Minium buy 0.01 BNB - 10 BNB</p>
+                            <p>(*) Your friends who buy through your link receive 100% commission.</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-md-0 mt-5">
+                        <div class="airdrop w-100 position-relative py-4 px-3">
+                            <div class="airdrop__header d-flex justify-content-between">
+                                <h1 class="text-white btn airdrop__header--title m-0 p-0 fs-3" style="line-height: 1;">
+                                    Pre-sale</h1>
+                                <button id="btnInfo" class="btn airdrop__header--button text-white px-3 py-0">
+                                    <i class="fa fa-info-circle text-white"></i> Max Supply: 9,800,000 $RERLIN
+                                </button>
+                            </div>
+                            <div class="airdrop__exchange mt-4">
+                                <div class="airdrop__exchange--form">
+                                    <div class="airdrop__exchange--form--group position-relative">
+                                        <div
+                                            class="airdrop__exchange--select d-flex position-relative align-items-center">
+                                            <div class="select-box">
+                                                <div class="select-box__current d-inline-block position-relative"
+                                                    tabindex="1">
+                                                    <div class="select-box__value">
+                                                        <input class="select-box__input" type="radio" id="coin_a_1"
+                                                            value="1" name="coin_a" checked="checked" />
+                                                        <div class="select-box__input-text ps-3 pe-5 py-2">
+                                                            <div
+                                                                class="airdrop__exchange--select--item d-flex align-items-center">
+                                                                <img src="./assets/images/binance-coin.png"
+                                                                    class="img-fluid airdrop__exchange--select--item--img me-2"
+                                                                    alt="">
+                                                                <div class="airdrop__exchange--select--item--text">
+                                                                    <h6 class=" m-0 p-0 text-white">BNB
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+
+                                                    <i class="select-box__icon text-white fa fa-angle-down fs-3"
+                                                        aria-hidden="true"></i>
+                                                </div>
+
+                                            </div>
+                                            <div style="flex: 1 1 0%;">
+                                                <input id="buyinput" type="text" class="form-control text-end airdrop__exchange--input" required="required" placeholder="0.05" style="text-align: center; color: #7F5D54" value="0.05">
+
+                                            </div>
+
+                                        </div>
+                                        <ul class="select-box__list position-absolute start-0 end-0">
+                                            <li>
+                                                <label class="select-box__option" for="coin_a_1"
+                                                    aria-hidden="aria-hidden">
+                                                    <div
+                                                        class="airdrop__exchange--select--item d-flex align-items-center">
+                                                        <img src="./assets/images/logo.png"
+                                                            class="img-fluid airdrop__exchange--select--item--img me-2"
+                                                            alt="">
+                                                        <div class="airdrop__exchange--select--item--text">
+                                                            <h6 class=" m-0 p-0">Rerlin</h6>
+                                                            <p class=" m-0 p-0">Rerlin</p>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="select-box__option" for="coin_a_2"
+                                                    aria-hidden="aria-hidden">
+                                                    <div
+                                                        class="airdrop__exchange--select--item d-flex align-items-center">
+                                                        <img src="./assets/images/binance-coin.png"
+                                                            class="img-fluid airdrop__exchange--select--item--img me-2"
+                                                            alt="">
+                                                        <div class="airdrop__exchange--select--item--text">
+                                                            <h6 class=" m-0 p-0">BNB</h6>
+                                                            <p class=" m-0 p-0">Binance coin</p>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="airdrop__exchange--arrow d-flex justify-content-center">
+                                        <i class="fa fa-chevron-circle-down fs-3 d-inline-block"
+                                            style="color: #6B7280;"></i>
+                                    </div>
+                                    <div class="airdrop__exchange--form--group position-relative">
+                                        <div
+                                            class="airdrop__exchange--select d-flex position-relative align-items-center">
+                                            <div class="select-box">
+                                                <div class="select-box__current d-inline-block position-relative"
+                                                    tabindex="1">
+                                                    <div class="select-box__value">
+                                                        <input class="select-box__input" type="radio" id="coin_b_1"
+                                                            value="3" name="coin_b" checked />
+                                                        <div class="select-box__input-text ps-3 pe-5 py-2">
+                                                            <div
+                                                                class="airdrop__exchange--select--item d-flex align-items-center">
+                                                                <img src="./assets/images/logo.png"
+                                                                    class="img-fluid airdrop__exchange--select--item--img me-2"
+                                                                    alt="">
+                                                                <div class="airdrop__exchange--select--item--text">
+                                                                    <h6 class=" m-0 p-0 text-white">Rerlin
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <i class="select-box__icon text-white fa fa-angle-down fs-3"
+                                                        aria-hidden="true"></i>
+                                                </div>
+
+                                            </div>
+                                            <div style="flex: 1 1 0%;">
+                                                <input type="text" id="coinB" readonly
+                                                    class="form-control text-end airdrop__exchange--input" value="">
+                                            </div>
+                                        </div>
+                                        <ul class="select-box__list position-absolute start-0 end-0">
+                                            <li>
+                                                <label class="select-box__option" for="coin_b_1"
+                                                    aria-hidden="aria-hidden">
+                                                    <div
+                                                        class="airdrop__exchange--select--item d-flex align-items-center">
+                                                        <img src="./assets/images/logo.png"
+                                                            class="img-fluid airdrop__exchange--select--item--img me-2"
+                                                            alt="">
+                                                        <div class="airdrop__exchange--select--item--text">
+                                                            <h6 class=" m-0 p-0">Rerlin</h6>
+                                                            <p class=" m-0 p-0">Rerlin</p>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    
+                                    <div class="airdrop__exchange--form--button mt-4" id="btnwBTC">
+                                        <div class="d-flex justify-content-between position-relative">
+                                            <h5
+                                                class="rounded-circle airdrop__exchange--form--tep-1 p-2 d-flex justify-content-center align-items-center m-0">
+                                                1</h5>
+                                            <h5
+                                                class="rounded-circle text-gray airdrop__exchange--form--tep-2 p-2 d-flex justify-content-center align-items-center m-0">
+                                                2</h5>
+                                            <div
+                                                class="airdrop__exchange--form--line position-absolute top-50 left-0 w-100">
+                                            </div>
+                                        </div>
+                                        <div class="airdrop__exchange--form--button--wrap mt-4">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <button href="javascript:void(0)" id="airbtn" onclick="buystt()"
+                                                        class="btn airdrop__exchange--form--button--buy d-block w-100 py-2 fs-5">Buy</button>
+                                                </div>
+                                                <div class="col-6">
+                                                    <button href="javascript:void(0)" id="airbtn" onclick="addToWallet()"
+                                                        class="btn airdrop__exchange--form--button--buy d-block w-100 py-2 fs-5 text-white bg-gray">Add Metamask</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="airdrop__exchange--form--link mt-3 text-end">
+                                        <button class="btn btn-link text-gray" href="javascript:void(0)" onclick="getreflink()">Get
+                                            Referral</button>
+
+                                            <div class="airdrop__exchange--form--group position-relative">
+                                                <input id="refaddress" type="text" class="form-control text-end airdrop__exchange--input" required="required" placeholder="Enter Your BEP20 Address" style="text-align: center; color: red">
+                                                <a href="javascript:copyToClipboard(&#39;refaddress&#39;)" style="float: right; font-size: 14px; text-decoration: underline;">Copy</a>
+                                                <input id="airinput" type="text" class="form-control" value="" required="required" placeholder="Referrer Id" hidden="">
+
+                                            </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <section id="bank" class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center divider py-5">
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-lg-between justify-content-center align-items-center">
+                        <img src="./assets/images/logo.png" class="img-fuild build__img" alt="">
+                        <div class="build__read-more d-none d-md-block ms-2">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  offset-0 col-md-6 text-md-end text-center">
+                    <h3 class="rubik-bold mt-4 mb-0">Build your own</h3>
+                    <h3 class="rubik-light">digital bank service</h3>
+                    <p class="rubik">
+                        Do you still rely on time consuming, expensive financial services? RERLIN fixes this. Take back
+                        the full control of your entire financial life
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="airdrop">
+        <div class="container">
+            <div class="airdrop__count-down airdrop__live">
+                <div class="row mt-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="text-center py-5 px-3">
+                            <img src="./assets/images/logo.png"
+                                class="img-fluid airdrop__countdown mx-auto" alt="">
+                            <div class="airdrop__count-down-live d-flex justify-content-center space-x-8 py-3 mt-5">
+                                <div
+                                    class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
+                                    <div class="airdrop__count-down-item--number lh-1 text-center">
+                                        <span id="days" class="text-white fs-1 fw-bold">00</span>
+                                    </div>
+                                    <div class="airdrop__count-down-item--label">
+                                        <span class="text-white">Days</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
+                                    <div class="airdrop__count-down-item--number lh-1 text-center">
+                                        <span id="hours" class="text-white fs-1 fw-bold">00</span>
+                                    </div>
+                                    <div class="airdrop__count-down-item--label">
+                                        <span class="text-white">Hours</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
+                                    <div class="airdrop__count-down-item--number lh-1 text-center">
+                                        <span id="minutes" class="text-white fs-1 fw-bold">00</span>
+                                    </div>
+                                    <div class="airdrop__count-down-item--label">
+                                        <span class="text-white">Min</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="airdrop__count-down-item d-flex justify-content-center flex-column text-center">
+                                    <div class="airdrop__count-down-item--number lh-1 text-center">
+                                        <span id="seconds" class="text-white fs-1 fw-bold">00</span>
+                                    </div>
+                                    <div class="airdrop__count-down-item--label">
+                                        <span class="text-white">Sec</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="airdrop__count-down-time mt-5">
+                                <h5 class="fst-italic">List On Pancakesswap</h5>
+                                <p class="" id="timeEnd"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="py-5">
+                            <h2 class="text-center">AIRDROP LIVE</h2>
+                            <div class="airdrop__line my-2"></div>
+                            <p class="text-center mt-2">
+                                The #1 MEME Token with amazing ecosystem on Binace Smart Chain
+                            </p>
+                            <div class="airdrop__line my-2"></div>
+                            <ul class="list-unstyled text-center">
+                                <a href="https://t.me/rerlincoin"> <i  class="fa fa-hand-o-right"></i>
+                                    Join Telegram Group
+                                </a> <br>
+                                <a href="https://t.me/rerlin" > <i class="fa fa-hand-o-right"></i>
+                                    Join Telegram Channel
+                                </a>
+                                <li> <i class="fa fa-hand-o-right"></i>
+                                    Follow Twitter
+                                </li>
+                            </ul>
+                            <div class="airdrop__line my-2"></div>
+                            <div class="text-center my-2">
+                                <button href="javascript:void(0)" id="airbtn" onclick="getAirdrop()" class="btn btn-danger airdrop__item--button text-uppercase">Claim 12 $RERLIN</button>
+                            </div>
+                            <div class="airdrop__line my-2"></div>
+                            <h5 class="text-center mt-3">
+                                <a href="https://bscscan.com/token/0xd5ba2f2b7f18ab17f389076fe956657538294f00" class=" text-uppercase">Smart Contract</a>
+                            </h5>
+                            <p class=" text-center fs-5 airdrop__item--info--list">
+                                0xd5ba2f2b7f18ab17f389076fe956657538294f00</p>
+                            <div class="text-center">
+                                <a href="https://link.trustwallet.com/open_url?coin_id=56&url=https://rerlin.com" class="">Open in Trust Wallet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="application" class="pt-5">
+        <div class="container">
+            <div class="one-application__title text-center">
+                <h1 class="rubik-light">One application.</h1>
+                <h1 class="rubik-bold mt-2 mb-0">For all daily financial needs.</h1>
+            </div>
+
+            <div class="one-application__content mt-5 position-relative">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-4 col-md-5 col-sm-6">
+                        <div class="one-application__content--left h-100">
+                            <p class="text-sm-end text-center rubik">
+                                Your everyday activities imply finance more than you think - hence we make dozens of
+                                transactions on a daily basis.
+                            </p>
+                            <p class="text-sm-end text-center rubik my-4">
+                                Scan anything using the magic button, exchange between any currencies, connect with
+                                friends financially or use escrow payments to leverage business trust.
+                            </p>
+                            <p class="text-sm-end text-center rubik-medium">Everything with just one app.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-sm-6">
+                        <div class="one-application__content--right h-100 position-relative mt-md-0 mt-4">
+                            <img src="./assets/images/phone-image@2x.1936f2b.png"
+                                class="one-application__content--right--img img-fluid position-absolute end-0 top-0"
+                                alt="">
+
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <section id="whereWeAre" class="pb-5">
+        <div class="container">
+            <div class="where-we-are__title text-center">
+                <h1 class="rubik-light">Where we are.</h1>
+                <h1 class="rubik-bold mt-2 mb-0">What should you do now?</h1>
+                <p class="rubik">RERLIN app is being set up as we speak and a preliminary release date will be
+                    announced when ready. In the meanwhile, there's plenty of ways you can engage and earn tokens.</p>
+            </div>
+            <div class="where-we-are__content">
+                <div class="row">
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="where-we-are__content--item p-4 bg-white h-100">
+                            <div class="position-relative h-100">
+                                <p class="rubik-light fs-5 mb-2">01.</p>
+                                <h4 class="rubik-bold">Join the waiting list</h4>
+                                <p class="rubik mt-3 where-we-are__content--item--text">
+                                    The app will be released in batches The higher positioned you are on the list, the
+                                    higher chances to get access earlier
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="where-we-are__content--item p-4 bg-white h-100">
+                            <div class="position-relative h-100">
+                                <p class="rubik-light fs-5 mb-2">02.</p>
+                                <h4 class="rubik-bold">Use your influential power</h4>
+                                <p class="rubik mt-3 where-we-are__content--item--text">
+                                    Your own network can help you accumulate the RERLIN token. Our refferal system is
+                                    designed to reward your social involvement.
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="where-we-are__content--item p-4 bg-white h-100">
+                            <div class="position-relative h-100">
+                                <p class="rubik-light fs-5 mb-2">03.</p>
+                                <h4 class="rubik-bold">Amplify RERLIN</h4>
+                                <p class="rubik mt-3 where-we-are__content--item--text">
+                                    Get even more RERLIN tokens using our amplifier system. Spread the word and you will
+                                    be rewarded.
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="where-we-are__content--item p-4 bg-white h-100">
+                            <div class="position-relative h-100">
+                                <p class="rubik-light fs-5 mb-2">04.</p>
+                                <h4 class="rubik-bold">Deposit to Earn BTC, USDT, RERLIN</h4>
+                                <p class="rubik mt-3 where-we-are__content--item--text">
+                                    8.32% APY for depositing BTC and 16.18% for USDT, compound rate Withdrawals
+                                    available every day Flexible For all needs.
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="engine" class="py-4">
+        <div class="container">
+            <div class="engine__title">
+                <h3 class="rubik-bold mt-4 mb-0 text-center">Engines ignited.</h3>
+                <h3 class="rubik-light text-center">Stay tuned.</h3>
+            </div>
+            <div class="engine__content mt-5">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="engine__content--item position-relative">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-md-4 d-none d-md-block">
+                                    <img src="/" class="img-fluid w-100" alt="">
+                                </div>
+                                <div class="col-md-1 d-flex justify-content-center d-none d-md-flex">
+                                    <div
+                                        class="engine__content--icon position-absolute d-flex justify-content-center align-items-center">
+                                        <i class="fa fa-check text-white"></i>
+                                    </div>
+                                    <div class="engine__content--line"></div>
+                                </div>
+
+                                <div class="col-md-4 d-md-block d-flex">
+                                    <div class="d-md-none d-block me-md-0 me-3">
+                                        <div
+                                            class="engine__content--icon d-flex justify-content-center align-items-center">
+                                            <i class="fa fa-check text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="rubik mb-2">
+                                            <span class="rubik-bold">The Unstoppable Revolution</span>
+                                            Video
+                                        </p>
+                                        <p class="rubik">
+                                            Our introductory video was released to provide a brief overview of our
+                                            vision
+                                            and mission. You can watch it here. here
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="engine__content--item position-relative">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-md-4 d-md-block d-flex">
+                                    <div class="d-md-none d-block me-md-0 me-3">
+                                        <div
+                                            class="engine__content--icon d-flex justify-content-center align-items-center">
+                                            <i class="fa fa-check text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="rubik text-md-end text-start mb-2">
+                                            <span class="rubik-bold">Website</span> First Version
+                                        </p>
+                                        <p class="rubik text-md-end text-start">
+                                            The first version of wesbite was released. We enabled you to join the
+                                            waiting
+                                            list, build your profile and use your influencial power to refer people to
+                                            accumulate RERLIN tokens.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-1 d-flex justify-content-center d-none d-md-flex">
+                                    <div
+                                        class="engine__content--icon position-absolute d-flex justify-content-center align-items-center">
+                                        <i class="fa fa-check text-white"></i>
+                                    </div>
+                                    <div class="engine__content--line"></div>
+                                </div>
+                                <div class="col-md-4 d-none d-md-block">
+                                    <img src="/" class="img-fluid w-100" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="engine__content--item position-relative">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-md-4 d-none d-md-block">
+                                    <img src="/" class="img-fluid w-100" alt="">
+                                </div>
+                                <div class="col-md-1 d-flex justify-content-center d-none d-md-flex">
+                                    <div
+                                        class="engine__content--icon engine__content--icon--yellow position-absolute d-flex justify-content-center align-items-center">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                    <div class="engine__content--line engine__content--line--gray"></div>
+                                </div>
+                                <div class="col-md-4 d-md-block d-flex">
+                                    <div class="d-md-none d-block me-md-0 me-3">
+                                        <div
+                                            class="engine__content--icon engine__content--icon--yellow d-flex justify-content-center align-items-center">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="rubik mb-2">
+                                            <span class="rubik-bold">Website</span> Second Version
+                                        </p>
+                                        <p class="rubik">
+                                            A new website version with a fresh look and feel is launched. We enabled you
+                                            to
+                                            amplify and deposit to earn BTC, USDT and RERLIN rewards.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="engine__content--item position-relative">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-md-4 d-md-block d-flex">
+                                    <div class="d-md-none d-block me-md-0 me-3">
+                                        <div
+                                            class="engine__content--icon engine__content--icon--yellow d-flex justify-content-center align-items-center">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="rubik text-md-end text-start mb-2">
+                                            <span class="rubik-bold">Use Case</span> Videos
+                                        </p>
+                                        <p class="rubik text-md-end text-start">
+                                            These videos are part of an explainer series that provides an applied
+                                            in-depth
+                                            view on all RERLIN capabilities and functionalities. The first series will
+                                            be
+                                            available soon. <a href="#">here</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-1 d-flex justify-content-center d-none d-md-flex">
+                                    <div
+                                        class="engine__content--icon engine__content--icon--yellow position-absolute d-flex justify-content-center align-items-center">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                    <div class="engine__content--line engine__content--line--gray"></div>
+                                    <div
+                                        class="engine__content--icon engine__content--icon--gray-stroke position-absolute d-flex justify-content-center align-items-center">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-none d-md-block">
+                                    <img src="/" class="img-fluid w-100" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="engine__content--item position-relative">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-md-4 d-md-block d-flex">
+                                    <div class="d-md-none d-block me-md-0 me-3">
+                                        <div class="engine__content--icon engine__content--icon--gray-stroke"></div>
+                                    </div>
+                                    <div>
+                                        <p class="rubik text-md-center text-start mb-2">
+                                            <span class="rubik-bold">Global</span> Expansion
+                                        </p>
+                                        <p class="rubik text-md-center text-start">
+                                            We will expand our business and presence on the global market, unlocking new
+                                            growth opportunities.
+                                        </p>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="footer bg-white">
+
+            <div class="divider my-5"></div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-6 mb-4">
+                            <h6 class="rubik-medium fs-7">Product</h6>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-2">
+                                    <span class="underline"></span>
+                                    <a href="#" class="text-normal text-decoration-none fs-7">Deposit to Earn</a>
+                                </li>
+                                <li class="mb-2">
+                                    <span class="underline">
+                                        <a href="#" class="text-normal text-decoration-none fs-7">Decentralized Escrow
+                                            (Soon)</a>
+                                    </span>
+                                </li>
+                                <li class="mb-2">
+                                    <span class="underline">
+                                        <a href="#" class="text-normal text-decoration-none fs-7">Cross Chain DEX
+                                            (Soon)</a>
+                                    </span>
+                                </li>
+                                <li class="mb-2">
+                                    <span class="underline">
+                                        <a href="#" class="text-normal text-decoration-none fs-7">Fiat On/Off Ramp
+                                            (Soon)</a>
+                                    </span>
+                                </li>
+                                <li class="mb-2">
+                                    <span class="underline">
+                                        <a href="#" class="text-normal text-decoration-none fs-7">Private Key Social
+                                            Guard (Soon)</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-6 mb-4">
+                            <h6 class="rubik-medium fs-7">Community</h6>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-2">
+                                    <span class="underline">
+                                        <a href="#" class="text-normal text-decoration-none fs-7">POIP Benefits</a>
+                                    </span>
+                                </li>
+                                <li class="mb-2">
+                                    <span class="underline">
+                                        <a href="#" class="text-normal text-decoration-none fs-7">Referrals</a>
+                                    </span>
+                                </li>
+                                <li class="mb-2">
+                                    <span class="underline">
+                                        <a href="#" class="text-normal text-decoration-none fs-7">Amplify</a>
+                                    </span>
+                                </li>
+                                <li class="mb-2">
+                                    <span class="underline">
+                                        <a href="#" class="text-normal text-decoration-none fs-7">RERLIN Token</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-6 mb-4">
+                            <h6 class="rubik-medium fs-7">About</h6>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-2">
+                                    <span class="underline">
+                                        <a href="#" class="text-normal text-decoration-none fs-7">FAQ</a>
+                                    </span>
+                                </li>
+                                <li class="mb-2">
+                                    <span class="underline">
+                                        <a href="#" class="text-normal text-decoration-none fs-7">Investors (Soon)</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-6 mb-4">
+                            <h6 class="rubik-medium fs-7">Legal</h6>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-2">
+                                    <span class="underline">
+                                        <a href="#" class="text-normal text-decoration-none fs-7">Privacy Policy</a>
+                                    </span>
+                                </li>
+                                <li class="mb-2">
+                                    <span class="underline">
+                                        <a href="#" class="text-normal text-decoration-none fs-7">Terms and
+                                            Conditions</a>
+                                    </span>
+                                </li>
+                                <li class="mb-2">
+                                    <span class="underline">
+                                        <a href="#" class="text-normal text-decoration-none fs-7">Cookie Policy</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright py-4">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center flex-column flex-md-row">
+                    <span class="fs-7 text-dark">©2021 RERLIN Tech Limited. All Rights Reserved</span>
+                    <div class="footer__social d-flex mt-md-0 mt-3">
+                        <a href="#" class="footer__social--icon me-2 p-2 d-flex justify-content-center align-items-center text-decoration-none text-dark">
+                            <i class="fa fa-twitter fs-5"></i>
+                        </a>
+                        <a href="https://t.me/rerlincoin" class="footer__social--icon me-2 p-2 d-flex justify-content-center text-decoration-none text-dark">
+                            <i class="fa fa-paper-plane fs-5"></i>
+                        </a>
+                        <a href="https://t.me/rerlin" class="footer__social--icon me-2 p-2 d-flex justify-content-center text-decoration-none text-dark">
+                            <i class="fa fa-paper-plane fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/vendor/jquery/jquery.min.js"></script>
+    <script src="./assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="assets/js/web3.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
